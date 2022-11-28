@@ -1,16 +1,19 @@
 import React from 'react';
 
-export default function About() {
+export default function Home() {
   return (
     <div>
-      <h1>About Page</h1>
+      <h1>About me</h1>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+            Hello, my name is Ryan Jewell. I am an aspiring computer programmer currently studying web design. When
+            it comes to wokrking with computers, I always tend to have a very methodical approach, however
+            determined I may be to get
+            something done as soon as possible. Through college and self teaching I have recently accumulated
+            experience working with
+            Linux, Java, Python, SQL, C++, and now the fundamental languages of website design: HTML, CSS and
+            JavaScript. My favorite hobby will always be torn
+            between playing guitar and snowboarding. During the summer months I find myself keeping busy outdoors
+            gardening, landscaping and taking pictures on hikes.
       </p>
     </div>
   );
