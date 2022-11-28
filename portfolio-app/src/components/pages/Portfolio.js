@@ -1,17 +1,18 @@
 import React from 'react';
+import Project from '../Project'
 
 export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+      <div id = "projects">
+        <Project 
+        img = "/portfolio-app/src/img/project/horiseonpicture.JPG"
+        title = "Horiseon Refactor"
+        link = "https://rjewell859.github.io/horiseonRefactor/"
+        repo = "https://github.com/Rjewell859/horiseonRefactor"
+        />
+      </div>
     </div>
   );
 }

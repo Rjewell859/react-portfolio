@@ -34,7 +34,7 @@ export default function Container() {
     <div>
       {/* We are passing the currentPage from state and the function to update it */}
       <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Header />
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       </nav>
