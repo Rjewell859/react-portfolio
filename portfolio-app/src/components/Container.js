@@ -33,8 +33,13 @@ export default function Container() {
   return (
     <div>
       {/* We are passing the currentPage from state and the function to update it */}
+      <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <Header />
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      </nav>
+      </header>
+      
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderContent()}
       {renderFooter()}
