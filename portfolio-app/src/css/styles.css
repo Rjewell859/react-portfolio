@@ -71,8 +71,18 @@ img:hover {
   transform:scale(1.1);
 }
 
-#projects {
-  display: grid;
+
+#projects > a{
+  text-decoration: none;
 }
 
+#projects img:hover {
+  opacity: 0.6;
+}
+
+#projects {
+
+  margin-left: 60px;
+  align-content: center;
+}
 
