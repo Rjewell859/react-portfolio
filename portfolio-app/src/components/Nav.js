@@ -1,12 +1,12 @@
 import React from 'react';
 
-function NavTabs({ currentPage, handlePageChange }) {
+function Nav({ currentPage, pageChange }) {
   return (
     <ul style={{float: 'right'}} className="nav nav-tabs">
       <li className="nav-item">
         <a
           href="#about"
-          onClick={() => handlePageChange('About')}
+          onClick={() => pageChange('About')}
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
           About
@@ -15,7 +15,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#portfolio"
-          onClick={() => handlePageChange('Portfolio')}
+          onClick={() => pageChange('Portfolio')}
           className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
           Portfolio
@@ -24,7 +24,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#Contact"
-          onClick={() => handlePageChange('Contact')}
+          onClick={() => pageChange('Contact')}
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
           Contact
@@ -33,7 +33,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#Resume"
-          onClick={() => handlePageChange('Resume')}
+          onClick={() => pageChange('Resume')}
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
         >
           Resume
@@ -43,4 +43,4 @@ function NavTabs({ currentPage, handlePageChange }) {
   );
 }
 
-export default NavTabs;
+export default Nav;

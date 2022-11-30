@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavTabs from './NavTabs';
+import Nav from './Nav';
 import Header from './Header';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
@@ -36,7 +36,7 @@ export default function Container() {
       <header>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Header />
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Nav currentPage={currentPage} pageChange={handlePageChange} />
       </nav>
       </header>
       

@@ -7,8 +7,14 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <div id = "projects">
         <Project 
-        img = "/portfolio-app/src/img/project/horiseonpicture.JPG"
+        img = "./img/project/horiseonpicture.JPG"
         title = "Horiseon Refactor"
+        link = "https://rjewell859.github.io/horiseonRefactor/"
+        repo = "https://github.com/Rjewell859/horiseonRefactor"
+        />
+        <Project 
+        img = "./img/project/lyrictionaryProjectImage.png"
+        title = "Lyrictionary"
         link = "https://rjewell859.github.io/horiseonRefactor/"
         repo = "https://github.com/Rjewell859/horiseonRefactor"
         />
