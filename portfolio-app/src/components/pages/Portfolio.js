@@ -7,16 +7,18 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <div id = "projects">
         <Project 
-        img = "./img/project/horiseonpicture.JPG"
+        img = {require("../../img/project/horiseonpicture.JPG")}
         title = "Horiseon Refactor"
         link = "https://rjewell859.github.io/horiseonRefactor/"
         repo = "https://github.com/Rjewell859/horiseonRefactor"
+        alt = "Horiseon refactored website"
         />
         <Project 
-        img = "./img/project/lyrictionaryProjectImage.png"
+        img = {require("../../img/project/lyrictionaryProjectImage.png")}
         title = "Lyrictionary"
-        link = "https://rjewell859.github.io/horiseonRefactor/"
-        repo = "https://github.com/Rjewell859/horiseonRefactor"
+        link = "https://derekson333.github.io/lyrictionary/"
+        repo = "https://github.com/derekson333/lyrictionary"
+        alt = "Dictionary for lyrics"
         />
       </div>
     </div>

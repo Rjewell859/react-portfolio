@@ -1,48 +1,9 @@
 /* CSS Reset */
 
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-li {
-  display: inline;
-}
-
-/* Setting display property to flex */
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5%;
-
-}
-
-/* Body margin, background image, alternative color, and font family set. */
 
 body {
   margin: 20px;
-  background-image: url("images/webpageBG.jpg");
+  background-image: url("../img/design/webpageBG.jpg");
   background-color: #7577ff;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -53,21 +14,25 @@ h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Shape the header and utilize custom background */
-
 header {
   border-radius: 0px 0px 30px 30px;
-  width: 70%;
-  height: 20%;
-  background-image: url("images/headerBG.png");
+  width: 60%;
+  background-image: url("../img/design/headerBG.png");
   background-repeat: no-repeat;
 }
 
-h1 {
-  position: relative;
-  top: 30%;
-  left: 10%;
+nav {
+  width:50%;
+  margin-bottom: 10px;
 }
+
+footer {
+  clear: both;
+  margin-top: 40%; 
+  margin-bottom: 0; 
+  position: sticky
+}
+
 
 /* Radial gradient and positioning used for the navigation bar. */
 nav {
@@ -83,170 +48,31 @@ nav {
 }
 
 /* Set background to white for paragraphs to improve legibility. */
-
 p {
   background-color: white;
-  border-radius: 0 0 10px 10px;
+ 
 }
 
-nav a {
-
-  margin: 10px;
-  color: white;
-}
-
-/* Removes underline for links. */
-
-a {
-  text-decoration: none;
-}
-
-/* Links change color to aquamarine on hover */
-
-a:hover {
-  color: aquamarine;
-}
-
-/* Sets flex property for section, height and width to fit-content to remove wasted space. */
-
-section {
-  flex: 1 1 0;
-  height: fit-content;
-  width: fit-content;
-  padding: 10px;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  border: 3px inset darkcyan;
-  border-radius: 10px;
-}
-
-/* Sets padding background and color of the h3 elements for each section. */
-
-section h3 {
-  padding: 20px;
-  background: #2b6091;
-  color: #fff;
-}
-
-div {
-  margin-bottom: 10px;
-}
-
-/* Changes h3 elements within div elements to a different background and includes a border radius for the top, this only applies to the work section. */
-
-div h3 {
-  background: #0a42db;
-  border-radius: 5px 5px 0px 0px;
-}
-
-section img {
-  width: 100%;
-  min-width: 400px;
-}
-
-/* Styling for the footer which contains copyright statement, positions in the bottom right with italicized font. */
-
-footer {
-  float: right;
-  font-family: Helvetica;
-  font-weight: 500;
-  font-style: italic;
-  color: rgba(0, 0, 0, 0.7);
-  margin-right: 10%;
-}
-
-/* Sets name header to have a different font, the background to be larger and a seperate background color. */
-
-main h2 {
-  font-size: 150%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  justify-content: space-between;
-  padding: 20px;
-  background: #264868;
-  color: #fff;
-}
-
-/* Stylizing individual elements of the contact form */
-
-#contactForm {
-  margin-left: 25px;
-}
-
-input,
-textarea {
-  margin-top: 25px;
-  font-size: 13px;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-
-#message {
-  margin-top: 15px;
-  vertical-align: middle;
-}
-
-#consent {
-  width: 30px;
-  box-shadow: none;
-}
-
-#consent:hover,
-#submit:hover {
-  color: cornflowerblue;
-}
-
-#submit {
-  font-family: Verdana;
-  border-style: outset;
-  border-color: darkcyan;
-  border-radius: 3px;
-  width: 150px;
-}
-
-/* Form errors appear red (javaScript needs work for this to occur) */
-#errors {
-  color: red;
-  font-weight: bold;
-}
-
-/* Contact links have a radial gradient background, all around border radius and white text. */
-
-#contactLinks a {
-  background: radial-gradient(ellipse at top, #64bde6, transparent),
-    radial-gradient(ellipse at bottom, #0c279f, transparent);
-  border-radius: 2px;
-  color: white;
-}
-
-/* Project images appear transparent on hover */
-
-#work {display:inline-table}
-#work img:hover {
-  opacity: 0.6;
-}
-
-#work img {
+img {
   width: 20%;
-    margin: 15px;
-    padding: 15px;
-    border-style:groove;
-    border-color:rgba(70, 180, 255, 0.5);
-    border-radius: 15px;
+  margin: 15px;
+  padding: 15px;
+  border-style:groove;
+  border-color:rgba(70, 180, 255, 0.5);
+  border-radius: 15px;
 }
 
-#work div {
- margin-top: 15px;
-
+img {
+  transition:transform 0.25s ease;
 }
 
-#firstApplication {
-  width: 100%;
+img:hover {
+  -webkit-transform:scale(1.1); /* or some other value */
+  transform:scale(1.1);
 }
 
-/* Sets header to span across the screen on mobile devices */
-@media screen and (max-width: 768px) {
-  header {
-    width: 100%;
-  }
+#projects {
+  display: grid;
 }
+
+

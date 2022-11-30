@@ -6,12 +6,12 @@ var checkbox = document.getElementById('consent');
 var errors = document.getElementById('errors');
 
 fullName.addEventListener('focus', function() {
-    if (this.value == '') {
+    if (this.value === '') {
         this.value='Please type your full name';
     }
     });
 message.addEventListener('focus', function() {
-    if (fullName.value != '' & fullName.value != 'Please type your full name') {
+    if (fullName.value !== '' & fullName.value !== 'Please type your full name') {
         this.value = 'Hello ' + fullName.value + '!';
     } else {
         this.value = 'Enter your full name first';
@@ -25,7 +25,11 @@ form.addEventListener('submit', function(e){
         stopSubmit = true;
     }
     
-    if (fullName.value == '') {
+    if (fullName.value === '') {
+        errors.innerHTML = '<p>Enter your name!</p>';
+        stopSubmit = true;
+    }
+    if (email.value === '') {
         errors.innerHTML = '<p>Enter your name!</p>';
         stopSubmit = true;
     }
