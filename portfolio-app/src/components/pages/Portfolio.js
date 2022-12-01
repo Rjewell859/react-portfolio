@@ -58,7 +58,7 @@ export default function Portfolio() {
         />
          <Project 
         img = {require("../../img/project/teamprofile.JPG")}
-        title = "Team Profile Generator"
+        title = "Team Generator"
         link = "https://github.com/Rjewell859/team-profile-generator"
         repo = "https://github.com/Rjewell859/team-profile-generator"
         alt = "Generates a team profile webpage based on input"

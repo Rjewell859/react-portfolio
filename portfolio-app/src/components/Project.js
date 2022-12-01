@@ -2,11 +2,14 @@ import React from 'react';
 
 function Project({img, title, link, repo, alt}){
     return(
-    <div>
-        <h3>{title}</h3>
+    <div className= 'project'>
+        <h4>{title}
+        <a href = {repo}>
+            <img id='giticon'src={require('../img/design/repoicon.png')} alt='git icon'></img>
+            </a></h4>
             <a href={link}><img
              src={img} alt={alt}></img></a>
-            <a href = {repo}>Repository Link</a>
+             
                 </div>
     );
 }

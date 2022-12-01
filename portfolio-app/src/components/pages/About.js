@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div>
-      <h1>About me</h1>
-      <p>
+    <div className='card'>
+      <h1 className='card-header'>About me</h1>
+      <p className='card-body'>
             Hello, my name is Ryan Jewell. I am an aspiring computer programmer currently studying web design. When
             it comes to wokrking with computers, I always tend to have a very methodical approach, however
             determined I may be to get
