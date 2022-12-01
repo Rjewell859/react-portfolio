@@ -1,6 +1,3 @@
-/* CSS Reset */
-
-
 body {
   margin: 20px;
   background-image: url("../img/design/webpageBG.jpg");
@@ -16,10 +13,12 @@ h3 {
 
 header {
   border-radius: 0px 0px 30px 30px;
+
   width: 100%;
-  
+
   background-repeat: no-repeat;
 }
+
 
 #name {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -29,19 +28,17 @@ header {
 
 
 footer {
-  clear: both; 
-  margin-bottom: 0; 
+  clear: both;
+  margin-bottom: 0;
   position: sticky
 }
 
-
-/* Radial gradient and positioning used for the navigation bar. */
 nav {
-  width:60%;
+  width: 60%;
   margin-bottom: 10px;
   margin-left: 50%;
- 
-    background-image: url("../img/design/headerBG.png");
+
+  background-image: url("../img/design/headerBG.png");
   border-radius: 5px;
   position: relative;
   float: right;
@@ -50,15 +47,15 @@ nav {
   top: 50%;
 }
 
-/* Set background to white for paragraphs to improve legibility. */
 p {
-  background-color: white;
- 
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 5px;
+
 }
 
 .project {
-  border-style:groove;
-  border-color:rgba(70, 180, 255, 0.5);
+  border-style: groove;
+  border-color: rgba(70, 180, 255, 0.5);
   border-radius: 15px;
   margin: 15px;
   padding: 15px;
@@ -68,8 +65,8 @@ p {
   margin-top: 15px;
   width: 200px;
   height: 200px;
-  
-  
+
+
 }
 
 #giticon {
@@ -78,17 +75,19 @@ p {
   height: 20%;
   float: right;
 }
+
 img {
-  transition:transform 0.25s ease;
+  transition: transform 0.25s ease;
 }
 
 img:hover {
-  -webkit-transform:scale(1.1); /* or some other value */
-  transform:scale(1.1);
+  -webkit-transform: scale(1.1);
+  /* or some other value */
+  transform: scale(1.1);
 }
 
 
-#projects > a{
+#projects>a {
   text-decoration: none;
 }
 
@@ -99,12 +98,12 @@ img:hover {
 #projects {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-column-gap: 20px; /* space between columns, change as needed */
-  grid-row-gap: 20px; 
-  
+  grid-column-gap: 20px;
+  /* space between columns, change as needed */
+  grid-row-gap: 20px;
+
 }
 
-#projects > div {
- width: 100%;
+#projects>div {
+  width: 100%;
 }
-

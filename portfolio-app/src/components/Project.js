@@ -13,5 +13,6 @@ function Project({img, title, link, repo, alt}){
                 </div>
     );
 }
+
  
 export default Project;
