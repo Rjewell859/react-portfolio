@@ -1,6 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
-export default function Blog() {
+
+export default function Contact() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'text/babel';
+    script.src = '/portfolio-app//src/js/form.js';
+    script.async = true;
+    document.body.appendChild(script);
+    
+  }, []);
+  
   return (
     <div>
       <div className='card'>
@@ -21,4 +31,5 @@ export default function Blog() {
       </div>
     </div>
   );
+  
 }
