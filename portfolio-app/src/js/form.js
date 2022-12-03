@@ -1,4 +1,4 @@
-/** @jsx React.DOM */
+
 
 var fullName = document.getElementById('fullname');
 var message = document.getElementById('message');
@@ -7,7 +7,7 @@ var form = document.getElementById('contactform');
 var checkbox = document.getElementById('consent');
 var errors = document.getElementById('errors');
 
-
+console.log("Form js is linked")
 fullName.addEventListener('focus', function() {
     if (this.value === '') {
         this.value='Please type your full name';
