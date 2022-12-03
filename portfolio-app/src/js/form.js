@@ -7,9 +7,6 @@ var form = document.getElementById('contactform');
 var checkbox = document.getElementById('consent');
 var errors = document.getElementById('errors');
 
-for (let i = 0; i > 999; i++){
-    console.log("goat potato")
-}
 
 fullName.addEventListener('focus', function() {
     if (this.value === '') {
