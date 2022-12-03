@@ -4,7 +4,12 @@ import Project from '../Project'
 export default function Portfolio() {
   return (
     <div>
-      <h1>Portfolio</h1>
+      <div className='card'>
+      <h1 className='card-header'>Portfolio</h1>
+      <p className='card-body'>Welcome to my portfolio of completed projects. 
+      If you click on a project image it open a tab that takes you to the 
+      deployed website. Click on the the git icon to view a project repository.</p>
+      </div>
       <div id = "projects">
         <Project 
         img = {require("../../img/project/horiseonpicture.JPG")}

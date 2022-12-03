@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Bitter:ital,wght@1,300&family=Noto+Sans+JP:wght@300&family=Playfair+Display&display=swap');
+
 body {
   margin: 20px;
   background-image: url("../img/design/webpageBG.jpg");
   background-color: #7577ff;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+/* font-family: 'Anek Devanagari', sans-serif;
+font-family: 'Bitter', serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Playfair Display', serif; */
 
 h1,
 h2,
@@ -19,6 +26,10 @@ header {
   background-repeat: no-repeat;
 }
 
+h1 {
+  font-family: 'Playfair Display', serif;
+  clear: both;
+}
 
 #name {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -26,6 +37,9 @@ header {
   font-size: 190%
 }
 
+.card {
+  clear: both;
+}
 
 footer {
   clear: both;
@@ -34,9 +48,10 @@ footer {
 }
 
 nav {
-  width: 60%;
-  margin-bottom: 10px;
-  margin-left: 50%;
+  width: 63%;
+
+  margin-bottom: 20px;
+
 
   background-image: url("../img/design/headerBG.png");
   border-radius: 5px;
@@ -45,16 +60,20 @@ nav {
   height: 30%;
   right: 15%;
   top: 50%;
+  font-family: 'Anek Devanagari', sans-serif;
 }
 
 p {
-  background-color: rgba(255,255,255,0.6);
+  font-family:  'Noto Sans JP', sans-serif;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
 
 }
+
 .margin-top {
   margin-top: 50%;
 }
+
 .project {
   border-style: groove;
   border-color: rgba(70, 180, 255, 0.5);
@@ -75,21 +94,21 @@ p {
 }
 
 #giticon {
-  margin:0;
+  margin: 0;
   mix-blend-mode: multiply;
   width: 10%;
   height: 10%;
-  
+
 }
 
 .photos {
-    margin: auto;
-    margin-top: 5%;
-    margin-left: 5%;
-    border-radius: 50%;
-    
-    width: 250px;
-    
+  margin: auto;
+  margin-top: 5%;
+  margin-left: 5%;
+  border-radius: 50%;
+
+  width: 250px;
+
 }
 
 #self {
@@ -98,17 +117,21 @@ p {
   margin: 15px;
   padding: 15px;
   border-radius: 5%;
-  -webkit-transform:scale(1); /* or some other value */
-    transform:scale(1);
-  margin-left:36%;
+  -webkit-transform: scale(1);
+  /* or some other value */
+  transform: scale(1);
+  margin-left: 36%;
   width: 20%;
 }
+
 .float-right {
-  float:right;
+  float: right;
 }
+
 .italic {
-  font-style: italic;
+  font-family: 'bitter'
 }
+
 .footer-icon {
   border-radius: 100%;
   width: 60px;
