@@ -20,6 +20,7 @@ message.addEventListener('focus', function() {
         this.value = 'Enter your full name first';
     }
 });
+
 form.addEventListener('submit', function(e){
     var stopSubmit = false;
     
