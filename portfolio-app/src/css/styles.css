@@ -7,10 +7,27 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* font-family: 'Anek Devanagari', sans-serif;
-font-family: 'Bitter', serif;
-font-family: 'Noto Sans JP', sans-serif;
-font-family: 'Playfair Display', serif; */
+#resume {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#resume {
+  text-decoration: none;
+  padding: 0 5px;
+  transition: all .9s;
+  }
+  #resume:hover {
+  color: rgb(158, 159, 255);
+  background-color: rgb(44, 8, 247);
+  }
 
 h1,
 h2,
@@ -27,6 +44,7 @@ header {
 }
 
 h1 {
+  
   font-family: 'Playfair Display', serif;
   clear: both;
 }
@@ -111,6 +129,12 @@ p {
 
 }
 
+nav > h1 {
+  
+  text-shadow: 0 4px 6px #858282, 0 4px 7px #cccaca;
+  color: white;
+}
+
 #self {
   border-style: groove;
   border-color: rgba(70, 180, 255, 0.5);
@@ -126,6 +150,14 @@ p {
 
 .float-right {
   float: right;
+}
+
+#resume-text{
+  font-family: 'bitter';
+  font-size:medium;
+}
+.myinfo {
+  text-decoration: none;
 }
 
 .italic {

@@ -1,21 +1,36 @@
-import React from 'react';
+import React from "react";
 
 export default function Contact() {
   return (
-    <div>
-       <div className='card'>
-      <h1 className='card-header'>Resume</h1>
-      <p className='card-body'>Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.</p>
+    <div id="contact">
+      <div className="card bg-light mb-3">
+        <h1 className="card-header">Resume <span id='resume-text' className="float-right">Download my <button id="resume">resume</button>.</span></h1>
+        <p className="card-body">
+          <br></br>
+          <h3>Front-end:</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>Responsive design</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+          </ul>
+          <br></br>
+          <h3>Back-end:</h3>
+          <ul>
+            <li>APIs</li>
+            <li>Node</li>
+            <li>Express</li>
+            <li>MySQL</li>
+            <li>Sequelize</li>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
+            <li>GraphQL</li>
+            <li>Apollo</li>
+          </ul>
+        </p>
       </div>
     </div>
   );
