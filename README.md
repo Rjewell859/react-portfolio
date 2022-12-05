@@ -13,7 +13,8 @@
 My portfolio is a react application, it uses conditional rendering and responsive design. The app is divided into four sections. 
 The about page, portfolio, contact page, and resume. On the portfolio page you will find
 a series of my projects with their images, each image is a link to the deployed website of that application.
-The git icon is links to the repository for that application.
+The git icon is links to the repository for that application. The contact page form is currently for demonstration,
+but below the form you will find my information, as well my email address is in the contact section of this readme.
 
 ## Installation
 
