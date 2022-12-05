@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.22763629.css",
-    "main.js": "/react-portfolio/static/js/main.c978380b.js",
+    "main.css": "/react-portfolio/static/css/main.01628c26.css",
+    "main.js": "/react-portfolio/static/js/main.acdeede0.js",
     "static/media/Katahdin.JPG": "/react-portfolio/static/media/Katahdin.4d7724e158e8cf61dbc2.JPG",
     "static/media/plateau.JPG": "/react-portfolio/static/media/plateau.950cd03c1b68e5e9d25e.JPG",
     "static/media/sunbeam.JPG": "/react-portfolio/static/media/sunbeam.fd1c69fb323716db79f7.JPG",
@@ -27,11 +27,11 @@
     "static/media/tech-blog.JPG": "/react-portfolio/static/media/tech-blog.5733601791072e417292.JPG",
     "static/media/ecommerce.JPG": "/react-portfolio/static/media/ecommerce.ecb22574a3a3d99f7587.JPG",
     "index.html": "/react-portfolio/index.html",
-    "main.22763629.css.map": "/react-portfolio/static/css/main.22763629.css.map",
-    "main.c978380b.js.map": "/react-portfolio/static/js/main.c978380b.js.map"
+    "main.01628c26.css.map": "/react-portfolio/static/css/main.01628c26.css.map",
+    "main.acdeede0.js.map": "/react-portfolio/static/js/main.acdeede0.js.map"
   },
   "entrypoints": [
-    "static/css/main.22763629.css",
-    "static/js/main.c978380b.js"
+    "static/css/main.01628c26.css",
+    "static/js/main.acdeede0.js"
   ]
 }
