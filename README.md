@@ -28,6 +28,6 @@ This app is installable by clicking on the icon in the far right of the address 
 
 #### Contact
 
-See my repositories at [Github Profile](https://github.com/rjewell859)
+See my repositories at [rjewell859](https://github.com/rjewell859)
 
 Email me with additional questions at headwallforest27@gmail.com
