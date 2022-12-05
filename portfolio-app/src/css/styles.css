@@ -1,33 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Bitter:ital,wght@1,300&family=Noto+Sans+JP:wght@300&family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Bitter:ital,wght@1,300&family=Noto+Sans+JP:wght@300&family=Playfair+Display&display=swap");
 
 body {
   margin: 20px;
   background-image: url("../img/design/webpageBG.jpg");
   background-color: #7577ff;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
-#resume {
-  background: none!important;
-  border: none;
-  padding: 0!important;
-  /*optional*/
-  font-family: arial, sans-serif;
-  /*input has OS specific font-family*/
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-#resume {
-  text-decoration: none;
-  padding: 0 5px;
-  transition: all .9s;
-  }
-  #resume:hover {
-  color: rgb(158, 159, 255);
-  background-color: rgb(44, 8, 247);
-  }
 
 h1,
 h2,
@@ -37,40 +15,24 @@ h3 {
 
 header {
   border-radius: 0px 0px 30px 30px;
-
   width: 100%;
-
   background-repeat: no-repeat;
 }
 
 h1 {
-  
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   clear: both;
 }
 
-#name {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin-left: 5px;
-  font-size: 190%
-}
-
-.card {
-  clear: both;
-}
-
-footer {
-  clear: both;
-  margin-bottom: 0;
-  position: sticky
+p {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
 }
 
 nav {
   width: 63%;
-
   margin-bottom: 20px;
-
-
   background-image: url("../img/design/headerBG.png");
   border-radius: 5px;
   position: relative;
@@ -78,14 +40,40 @@ nav {
   height: 30%;
   right: 15%;
   top: 50%;
-  font-family: 'Anek Devanagari', sans-serif;
+  font-family: "Anek Devanagari", sans-serif;
 }
 
-p {
-  font-family:  'Noto Sans JP', sans-serif;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 5px;
+nav > h1 {
+  text-shadow: 0 4px 6px #858282, 0 4px 7px #cccaca;
+  color: white;
+}
 
+footer {
+  clear: both;
+  margin-bottom: 0;
+  position: sticky;
+}
+
+img {
+  transition: transform 0.25s ease;
+}
+
+img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#resume {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  font-family: arial, sans-serif;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card {
+  clear: both;
 }
 
 .margin-top {
@@ -97,6 +85,7 @@ p {
   border-color: rgba(70, 180, 255, 0.5);
   border-radius: 15px;
   margin: 15px;
+  margin-left:auto;
   padding: 15px;
 }
 
@@ -107,16 +96,18 @@ p {
   margin-top: 15px;
   width: 200px;
   height: 200px;
-
-
 }
 
-#giticon {
-  margin: 0;
-  mix-blend-mode: multiply;
-  width: 10%;
-  height: 10%;
+.italic {
+  font-family: "bitter";
+}
 
+.float-right {
+  float: right;
+}
+
+.myinfo {
+  text-decoration: none;
 }
 
 .photos {
@@ -124,44 +115,7 @@ p {
   margin-top: 5%;
   margin-left: 5%;
   border-radius: 50%;
-
   width: 250px;
-
-}
-
-nav > h1 {
-  
-  text-shadow: 0 4px 6px #858282, 0 4px 7px #cccaca;
-  color: white;
-}
-
-#self {
-  border-style: groove;
-  border-color: rgba(70, 180, 255, 0.5);
-  margin: 15px;
-  padding: 15px;
-  border-radius: 5%;
-  -webkit-transform: scale(1);
-  /* or some other value */
-  transform: scale(1);
-  margin-left: 36%;
-  width: 20%;
-}
-
-.float-right {
-  float: right;
-}
-
-#resume-text{
-  font-family: 'bitter';
-  font-size:medium;
-}
-.myinfo {
-  text-decoration: none;
-}
-
-.italic {
-  font-family: 'bitter'
 }
 
 .footer-icon {
@@ -171,34 +125,62 @@ nav > h1 {
   mix-blend-mode: multiply;
 }
 
-img {
-  transition: transform 0.25s ease;
-}
-
-img:hover {
-  -webkit-transform: scale(1.1);
-  /* or some other value */
-  transform: scale(1.1);
-}
-
-
-#projects>a {
+#resume {
   text-decoration: none;
+  padding: 0 5px;
+  transition: all 0.9s;
 }
 
-#projects img:hover {
-  opacity: 0.6;
+#resume:hover {
+  color: rgb(158, 159, 255);
+  background-color: rgb(44, 8, 247);
+}
+
+#name {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-left: 5px;
+  font-size: 190%;
+}
+
+#giticon {
+  margin: 0;
+  mix-blend-mode: multiply;
+  width: 10%;
+  height: 10%;
+}
+
+#self {
+  border-style: groove;
+  border-color: rgba(70, 180, 255, 0.5);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 5%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  margin-left: 36%;
+  width: 20%;
+}
+
+#resume-text {
+  font-family: "bitter";
+  font-size: medium;
 }
 
 #projects {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 20px;
-  /* space between columns, change as needed */
   grid-row-gap: 20px;
-
 }
 
-#projects>div {
+#projects > div {
   width: 100%;
+}
+
+#projects > a {
+  text-decoration: none;
+}
+
+#projects img:hover {
+  opacity: 0.6;
 }
