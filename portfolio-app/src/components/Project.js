@@ -5,7 +5,7 @@ function Project({ img, title, link, repo, alt }) {
     <div className="project">
       <h4>
         {title}
-        <a href={repo}>
+        <a href={repo} target="_blank" rel="noreferrer">
           <img
             id="giticon"
             src={require("../img/design/repoicon.png")}
@@ -13,7 +13,7 @@ function Project({ img, title, link, repo, alt }) {
           ></img>
         </a>
       </h4>
-      <a href={link}>
+      <a href={link} target="_blank" rel="noreferrer">
         <img src={img} alt={alt}></img>
       </a>
     </div>

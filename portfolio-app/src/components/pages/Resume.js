@@ -4,7 +4,12 @@ export default function Contact() {
   return (
     <div id="contact">
       <div className="card bg-light mb-3">
-        <h1 className="card-header">Resume <span id='resume-text' className="float-right">Download my <button id="resume">resume</button>.</span></h1>
+        <h1 className="card-header">
+          Resume{" "}
+          <span id="resume-text" className="float-right">
+            Download my <button id="resume">resume</button>.
+          </span>
+        </h1>
         <p className="card-body">
           <br></br>
           <h3>Front-end:</h3>

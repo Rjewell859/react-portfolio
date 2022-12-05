@@ -21,7 +21,11 @@ function Footer() {
           <div className="col-md-1 mb-md-0 mb-2">
             <ul className="list-unstyled">
               <li>
-                <a href="https://github.com/Rjewell859">
+                <a
+                  href="https://github.com/Rjewell859/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     className="footer-icon"
                     src={require("../img/design/github.png")}
@@ -34,7 +38,11 @@ function Footer() {
           <div className="col-md-1 mb-md-0 mb-2">
             <ul className="list-unstyled">
               <li>
-                <a href="https://stackoverflow.com/users/19155658/ryan-jewell">
+                <a
+                  href="https://stackoverflow.com/users/19155658/ryan-jewell/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     className="footer-icon"
                     src={require("../img/design/stackicon.png")}
@@ -48,7 +56,11 @@ function Footer() {
           <div className="col-md-1 mb-md-0 mb-2">
             <ul className="list-unstyled">
               <li>
-                <a href="https://www.linkedin.com/in/ryan-jewell-29336023b/">
+                <a
+                  href="https://www.linkedin.com/in/ryan-jewell-29336023b"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     className="footer-icon"
                     src={require("../img/design/linkedin.png")}

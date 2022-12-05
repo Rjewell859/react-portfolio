@@ -9,8 +9,6 @@ import Footer from "./Footer";
 
 export default function Container() {
   const [currentPage, setCurrentPage] = useState("About");
-
-  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderContent = () => {
     if (currentPage === "About") {
       return <About />;
@@ -32,15 +30,12 @@ export default function Container() {
 
   return (
     <div>
-      {/* We are passing the currentPage from state and the function to update it */}
       <header>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <Header />
           <Nav currentPage={currentPage} pageChange={handlePageChange} />
         </nav>
       </header>
-
-      {/* Here we are calling the renderPage method which will return a component  */}
       {renderContent()}
       {renderFooter()}
     </div>

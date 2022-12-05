@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-
 import { checkMessage, validateEmail } from "../../utils/helpers";
 
-function Form() {
-
+function Contact() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -12,7 +10,6 @@ function Form() {
   const [successMessage, setSuccessMessage] = useState("");
 
   const handleInputChange = (e) => {
-   
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
@@ -50,7 +47,7 @@ function Form() {
       setErrorMessage("");
       setSuccessMessage(`You're message has been submitted, ${name}.`);
     }
-    
+
     setName("");
     setMessage("");
     setConsent("");
@@ -145,25 +142,10 @@ function Form() {
         <br></br>
         <a className="myinfo" href="tel:18006035028260">
           (603)502-8260
-        </a>{" "}
+        </a>
       </p>
     </div>
   );
 }
 
-export default Form;
-// export default function Contact() {
-
-//   return (
-
-//     <div>
-//       <Helmet>
-//         <script
-//           src="../../js/form.js"
-//           type='text/javascript'
-//         >{console.log("Fix me")}</script>
-//       </Helmet>
-
-//   );
-
-// }
+export default Contact;
