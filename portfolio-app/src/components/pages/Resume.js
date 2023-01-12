@@ -5,12 +5,16 @@ export default function Contact() {
     <div id="contact">
       <div className="card bg-light mb-3">
         <h1 className="card-header">
-          Resume{" "}
+          Resume
           <span id="resume-text" className="float-right">
-            Download my <button id="resume">resume</button>.
+            Download my{" "}
+            <a id="resume" href="/Resume.pdf" download>
+              resume
+            </a>
+            .
           </span>
         </h1>
-        <p className="card-body">
+        <section className="card-body">
           <br></br>
           <h3>Front-end:</h3>
           <ul>
@@ -35,7 +39,7 @@ export default function Contact() {
             <li>GraphQL</li>
             <li>Apollo</li>
           </ul>
-        </p>
+        </section>
       </div>
     </div>
   );

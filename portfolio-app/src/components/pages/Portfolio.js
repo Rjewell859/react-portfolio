@@ -14,11 +14,11 @@ export default function Portfolio() {
       </div>
       <div id="projects">
         <Project
-          img={require("../../img/project/horiseonpicture.JPG")}
-          title="Horiseon Refactor"
-          link="https://rjewell859.github.io/horiseonRefactor/"
-          repo="https://github.com/Rjewell859/horiseonRefactor"
-          alt="A simple refactored website"
+          img={require("../../img/project/sheltr.JPG")}
+          title="Sheltr"
+          link="https://sheltr.tech/"
+          repo="https://github.com/derekson333/sheltr"
+          alt="A pet adoption website"
         />
         <Project
           img={require("../../img/project/lyrictionaryProjectImage.png")}
@@ -118,6 +118,13 @@ export default function Portfolio() {
           link="https://tech-blog52.herokuapp.com/"
           repo="https://github.com/Rjewell859/tech-blog"
           alt="A basic blog website"
+        />
+        <Project
+          img={require("../../img/project/horiseonpicture.JPG")}
+          title="Horiseon Refactor"
+          link="https://rjewell859.github.io/horiseonRefactor/"
+          repo="https://github.com/Rjewell859/horiseonRefactor"
+          alt="A simple refactored website"
         />
       </div>
     </div>
