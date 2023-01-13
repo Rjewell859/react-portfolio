@@ -8,7 +8,7 @@ export default function Contact() {
           Resume
           <span id="resume-text" className="float-right">
             Download my{" "}
-            <a id="resume" href="/react-portfolio/portfolio-app/Resume.pdf" download>
+            <a id="resume" href="/Resume.pdf" download>
               resume
             </a>
             .
