@@ -8,7 +8,12 @@ export default function Contact() {
           Resume
           <span id="resume-text" className="float-right">
             Download my{" "}
-            <a id="resume" href="/Resume.pdf" download>
+            <a
+              id="resume"
+              href={require("./Resume.pdf")}
+              type="application/octet-stream"
+              download
+            >
               resume
             </a>
             .
