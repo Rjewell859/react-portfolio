@@ -10,7 +10,7 @@ export default function Contact() {
             Download my{" "}
             <a
               id="resume"
-              href={require("./Resume.pdf")}
+              href={require("../../Resume.pdf")}
               type="application/octet-stream"
               download
             >
