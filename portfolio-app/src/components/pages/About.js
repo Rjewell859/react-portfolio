@@ -17,7 +17,7 @@ export default function Home() {
           During the summer months I find myself keeping busy outdoors
           gardening, landscaping and taking pictures on hikes.
         </p>
-        <div className="card-footer">
+        <div className="card-footer" id="images">
           <img
             className="photos"
             src={require("../../img/photos/Katahdin.JPG")}

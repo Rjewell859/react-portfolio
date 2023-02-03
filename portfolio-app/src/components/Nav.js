@@ -1,15 +1,18 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import ListGroup from 'react-bootstrap/ListGroup'
 
 function Nav() {
   return (
-    <ul style={{ float: "right" }} className="nav nav-tabs">
-      <li className="nav-item">
+    <listGroup style={{ float: "right" }} className="nav nav-tabs" as="ul">
+  
+      <ListGroup.Item className="nav-item" as="li">
         <Link className="nav-link" to="/about">
           About
         </Link>
-      </li>
+        </ListGroup.Item>
+      
       <li className="nav-item">
         <Link className="nav-link" to="/contact">
           Contact
@@ -25,7 +28,7 @@ function Nav() {
           Resume
         </Link>
       </li>
-    </ul>
+    </listGroup>
   );
 }
 
