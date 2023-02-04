@@ -119,10 +119,11 @@ footer li {
 }
 
 .nav-item {
-  border-radius: 12% 12% 0 0;
+  border-radius: 11% 11% 0 0;
   transition: all 1s ease;
 }
 .nav-item:hover {
+  border-radius: 14% 14% 0 0;
   background-image: url("../img/design/headerBG.png");
   background-color: rgba(76, 191, 199, 0.918);
 }
