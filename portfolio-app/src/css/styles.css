@@ -13,13 +13,6 @@ h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-  border-radius: 0px 0px 30px 30px;
-  margin-left: -15px;
-  width: 100%;
-  background-repeat: no-repeat;
-}
-
 h1 {
   font-family: "Playfair Display", serif;
   clear: both;
@@ -32,15 +25,12 @@ p {
 }
 
 nav {
-  width: 63%;
+  margin: auto;
+  width: 55%;
+  background-repeat: no-repeat;
   margin-bottom: 20px;
   background-image: url("../img/design/headerBG.png");
   border-radius: 5px;
-  position: relative;
-  float: right;
-  height: 30%;
-  right: 15%;
-  top: 50%;
   font-family: "Anek Devanagari", sans-serif;
 }
 
@@ -50,15 +40,19 @@ nav > h1 {
 }
 
 footer {
-  clear: both;
   margin-bottom: 0;
   position: sticky;
+  clear: "both";
 }
 
+#contact {
+  margin: auto;
+  max-width: 1100px;
+}
 footer ul {
-  display: 'flex';
-  justify-content:'center';
-   list-style-type: 'none';
+  display: "flex";
+  justify-content: "center";
+  list-style-type: "none";
 }
 
 footer li {
@@ -94,6 +88,7 @@ img:hover {
 .project {
   border-style: groove;
   border-color: rgba(70, 180, 255, 0.5);
+  background-color: rgba(75, 187, 202, 0.295);
   border-radius: 15px;
   margin: 15px;
   margin-left: auto;
@@ -105,8 +100,8 @@ img:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
 }
 
 .italic {
@@ -122,12 +117,17 @@ img:hover {
 }
 
 .photos {
-  margin: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 5%;
+  margin: 1.5%;
   border-radius: 50%;
-  width: 250px;
+  width: 295px;
+}
+
+#images {
+  display: flex;
+
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .footer-icon {
@@ -154,20 +154,16 @@ img:hover {
   font-size: 190%;
 }
 
-#images {
-display: block;
-}
-
 #giticon {
   margin: 0;
   mix-blend-mode: multiply;
-  width: 10%;
-  height: 10%;
+  width: 15%;
+  height: 15%;
 }
 
 #self {
   display: block;
-  border-style: groove;
+  border-style: outset;
   border-color: rgba(70, 180, 255, 0.5);
   margin: auto;
   border-radius: 5%;

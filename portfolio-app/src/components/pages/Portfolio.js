@@ -8,8 +8,15 @@ export default function Portfolio() {
         <h1 className="card-header">Portfolio</h1>
         <p className="card-body">
           Welcome to my portfolio of completed projects. If you click on a
-          project image it open a tab that takes you to the deployed website.
-          Click on the the git icon to view a project repository.
+          project image it opens a new tab that will take you to the deployed
+          website. Click on the the respective "
+          <img
+            style={{ height: "25px", width: "25px" }}
+            id="giticon"
+            src={require("../../img/design/repoicon.png")}
+            alt="git icon"
+          ></img>
+          " icon to view a project repository.
         </p>
       </div>
       <div id="projects">

@@ -7,7 +7,7 @@ export default function Home() {
         <h1 className="card-header">About me</h1>
         <p className="card-body">
           Hello, my name is Ryan Jewell. I am an aspiring computer programmer
-          currently studying web design. When it comes to wokrking with
+          currently studying web design. When it comes to working with
           computers, I always tend to have a very methodical approach, however
           determined I may be to get something done as soon as possible. Through
           college and self teaching I have recently accumulated experience

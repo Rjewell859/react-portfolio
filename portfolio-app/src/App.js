@@ -12,12 +12,11 @@ import Resume from "./components/pages/Resume";
 function App() {
   return (
     <Router>
-      <header>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <Header />
           <Nav />
         </nav>
-      </header>
+    
       <Routes>
         <Route path="/react-portfolio" element={<About />} />
         <Route path="/about" element={<About />} />
@@ -25,7 +24,9 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
+  
       <Footer />
+
     </Router>
   );
 }

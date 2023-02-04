@@ -26,17 +26,17 @@ function Contact() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    if (!validateEmail(email)) {
-      setSuccessMessage("");
-      setErrorMessage(`This email is invalid.`);
-      return;
-    } else if (!name) {
+    if (!name) {
       setSuccessMessage("");
       setErrorMessage("Please enter your name.");
       return;
     } else if (!checkMessage(message)) {
       setSuccessMessage("");
       setErrorMessage(`Please add more than 30 characters to your message.`);
+      return;
+    } else if (!validateEmail(email)) {
+      setSuccessMessage("");
+      setErrorMessage(`This email is invalid.`);
       return;
     }
     if (!consent) {
@@ -45,7 +45,10 @@ function Contact() {
       return;
     } else {
       setErrorMessage("");
-      setSuccessMessage(`You're message has been submitted, ${name}.`);
+      setSuccessMessage(
+        `You're message has been submitted, ${name}. (This form is an example, see below for my contact information)`
+      );
+      document.getElementById("consent").checked = false;
     }
 
     setName("");
@@ -55,9 +58,15 @@ function Contact() {
   };
 
   return (
-    <div className="card bg-light mb-3">
+    <div id="contact" className="card bg-light">
       <h1 className="card-header">Contact Me</h1>
-      <form className="card-body" action="#" method="post" id="contactform">
+      <form
+        name="contact-form"
+        className="card-body"
+        action="#"
+        method="post"
+        id="contactform"
+      >
         <div className="form-group">
           <label htmlFor="fullname">Name:</label>
           <input
