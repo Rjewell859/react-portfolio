@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.01628c26.css",
-    "main.js": "/react-portfolio/static/js/main.05c28c89.js",
+    "main.css": "/react-portfolio/static/css/main.15cdaa0c.css",
+    "main.js": "/react-portfolio/static/js/main.f077563e.js",
     "static/media/Katahdin.JPG": "/react-portfolio/static/media/Katahdin.4d7724e158e8cf61dbc2.JPG",
     "static/media/plateau.JPG": "/react-portfolio/static/media/plateau.950cd03c1b68e5e9d25e.JPG",
     "static/media/sunbeam.JPG": "/react-portfolio/static/media/sunbeam.fd1c69fb323716db79f7.JPG",
@@ -20,7 +20,7 @@
     "static/media/linkedin.png": "/react-portfolio/static/media/linkedin.66ffd29ac1bb3de67249.png",
     "static/media/tracker.JPG": "/react-portfolio/static/media/tracker.2772bff3b7897a3cc656.JPG",
     "static/media/schedule.jpg": "/react-portfolio/static/media/schedule.d803d7d16fda154ea419.jpg",
-    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.ac9dbc78545347683c30.pdf",
+    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.aeb1fbebaf07ea71c1cd.pdf",
     "static/media/teamprofile.JPG": "/react-portfolio/static/media/teamprofile.df10b77169783fff4f17.JPG",
     "static/media/password.JPG": "/react-portfolio/static/media/password.84e6cf000dbba94641c9.JPG",
     "static/media/jate.JPG": "/react-portfolio/static/media/jate.c1965764ea8e6478b4da.JPG",
@@ -29,11 +29,11 @@
     "static/media/tech-blog.JPG": "/react-portfolio/static/media/tech-blog.5733601791072e417292.JPG",
     "static/media/ecommerce.JPG": "/react-portfolio/static/media/ecommerce.ecb22574a3a3d99f7587.JPG",
     "index.html": "/react-portfolio/index.html",
-    "main.01628c26.css.map": "/react-portfolio/static/css/main.01628c26.css.map",
-    "main.05c28c89.js.map": "/react-portfolio/static/js/main.05c28c89.js.map"
+    "main.15cdaa0c.css.map": "/react-portfolio/static/css/main.15cdaa0c.css.map",
+    "main.f077563e.js.map": "/react-portfolio/static/js/main.f077563e.js.map"
   },
   "entrypoints": [
-    "static/css/main.01628c26.css",
-    "static/js/main.05c28c89.js"
+    "static/css/main.15cdaa0c.css",
+    "static/js/main.f077563e.js"
   ]
 }
