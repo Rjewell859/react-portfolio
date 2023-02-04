@@ -9,14 +9,13 @@ import Contact from "./components/pages/Contact";
 import Portfolio from "./components/pages/Portfolio";
 import Resume from "./components/pages/Resume";
 
-function App() {
+export default function App() {
   return (
     <Router>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <Header />
-          <Nav />
-        </nav>
-    
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <Header />
+        <Nav />
+      </nav>
       <Routes>
         <Route path="/react-portfolio" element={<About />} />
         <Route path="/about" element={<About />} />
@@ -24,11 +23,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
-  
       <Footer />
-
     </Router>
   );
 }
-
-export default App;

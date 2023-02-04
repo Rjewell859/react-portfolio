@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Contact() {
+export default function Resume() {
   return (
-    <div id="contact">
-      <div className="card bg-light mb-3">
+    <div className="info">
+      <div className="card bg-light">
         <h1 className="card-header">
           Resume
           <span id="resume-text" className="float-right">

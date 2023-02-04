@@ -41,7 +41,6 @@ export default function Portfolio() {
           repo="https://github.com/derekson333/Spillin-Beans"
           alt="Website for sharing recipes"
         />
-
         <Project
           img={require("../../img/project/note-taker.JPG")}
           title="Note Taker"

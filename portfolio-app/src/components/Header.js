@@ -1,5 +1,6 @@
 import React from "react";
-function Header() {
+
+export default function Header() {
   return (
     <h1 id="name" className="navbar-brand">
       Ryan Jewell
@@ -7,4 +8,3 @@ function Header() {
   );
 }
 
-export default Header;

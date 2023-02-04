@@ -1,8 +1,8 @@
 import React from "react";
 
-function Footer() {
+export default function Footer() {
   return (
-    <footer className="page-footer font-small blue pt-4">
+    <footer className="font-small blue pt-4">
       <ul
         style={{
           display: "flex",
@@ -18,7 +18,7 @@ function Footer() {
             rel="noreferrer"
           >
             <img
-              className="footer-icon"
+              className="grow footer-icon"
               src={require("../img/design/github.png")}
               alt="github icon"
             ></img>
@@ -32,7 +32,7 @@ function Footer() {
             rel="noreferrer"
           >
             <img
-              className="footer-icon"
+              className="grow footer-icon"
               src={require("../img/design/stackicon.png")}
               alt="github icon"
             ></img>
@@ -46,7 +46,7 @@ function Footer() {
             rel="noreferrer"
           >
             <img
-              className="footer-icon"
+              className="grow footer-icon"
               src={require("../img/design/linkedin.png")}
               alt="github icon"
             ></img>
@@ -54,11 +54,10 @@ function Footer() {
         </li>
       </ul>
 
-      <div className="float-right footer-copyright text-center py-3 italic">
+      <div id='copyright'>
         © 2022 Copyright, Ryan Jewell
       </div>
     </footer>
   );
 }
 
-export default Footer;

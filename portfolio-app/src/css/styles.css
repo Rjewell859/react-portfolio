@@ -12,7 +12,6 @@ h2,
 h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 h1 {
   font-family: "Playfair Display", serif;
   clear: both;
@@ -33,7 +32,6 @@ nav {
   border-radius: 5px;
   font-family: "Anek Devanagari", sans-serif;
 }
-
 nav > h1 {
   text-shadow: 0 4px 6px #858282, 0 4px 7px #cccaca;
   color: white;
@@ -44,41 +42,24 @@ footer {
   position: sticky;
   clear: "both";
 }
-
-#contact {
-  margin: auto;
-  max-width: 1100px;
-}
 footer ul {
   display: "flex";
   justify-content: "center";
   list-style-type: "none";
 }
-
 footer li {
   margin: 15px;
 }
 
-img {
-  transition: transform 0.25s ease;
-}
-
-img:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-#resume {
-  background: none !important;
-  border: none;
-  padding: 0 !important;
-  font-family: arial, sans-serif;
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
+.info {
+  margin: auto;
+  max-width: 1100px;
 }
 
 .card {
   clear: both;
+  box-shadow: inset 0 -6em 4em rgba(0, 0, 0, 0.068),
+    1.3em 2.3em 1em rgba(0, 0, 0, 0.158);
 }
 
 .margin-top {
@@ -94,7 +75,6 @@ img:hover {
   margin-left: auto;
   padding: 15px;
 }
-
 .project img {
   display: block;
   margin-left: auto;
@@ -102,6 +82,22 @@ img:hover {
   margin-top: 15px;
   width: 220px;
   height: 220px;
+}
+
+.footer-icon {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  mix-blend-mode: multiply;
+}
+
+.grow {
+  transition: transform 0.75s ease;
+}
+.grow:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.6;
 }
 
 .italic {
@@ -122,30 +118,28 @@ img:hover {
   width: 295px;
 }
 
+.nav-item {
+  border-radius: 12% 12% 0 0;
+  transition: all 1s ease;
+}
+.nav-item:hover {
+  background-image: url("../img/design/headerBG.png");
+  background-color: rgba(76, 191, 199, 0.918);
+}
+
+#copyright {
+  float: right;
+  font-family: "bitter";
+  font-style: italic;
+  text-align: center;
+}
+
 #images {
   display: flex;
 
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.footer-icon {
-  border-radius: 100%;
-  width: 80px;
-  height: 80px;
-  mix-blend-mode: multiply;
-}
-
-#resume {
-  text-decoration: none;
-  padding: 0 5px;
-  transition: all 0.9s;
-}
-
-#resume:hover {
-  color: rgb(158, 159, 255);
-  background-color: rgb(44, 8, 247);
 }
 
 #name {
@@ -167,14 +161,30 @@ img:hover {
   border-color: rgba(70, 180, 255, 0.5);
   margin: auto;
   border-radius: 5%;
-  -webkit-transform: scale(1);
-  transform: scale(1);
   width: 300px;
 }
 
+#resume {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  font-family: arial, sans-serif;
+  font-style: italic;
+  text-decoration: none;
+  transition: all 0.9s;
+  color: blue;
+}
+#resume:hover {
+  color: rgb(158, 159, 255);
+  background-color: rgb(44, 8, 247);
+}
 #resume-text {
   font-family: "bitter";
   font-size: medium;
+}
+
+#contact {
+  min-height: 70vh;
 }
 
 #projects {
@@ -183,15 +193,9 @@ img:hover {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
-
 #projects > div {
   width: 100%;
 }
-
 #projects > a {
   text-decoration: none;
-}
-
-#projects img:hover {
-  opacity: 0.6;
 }

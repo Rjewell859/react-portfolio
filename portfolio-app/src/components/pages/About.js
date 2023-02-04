@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Home() {
+export default function About() {
   return (
-    <div>
+    <>
       <div className="card bg-light mb-3">
         <h1 className="card-header">About me</h1>
         <p className="card-body">
@@ -50,6 +50,6 @@ export default function Home() {
         src={require("../../img/photos/selfPicture.JPG")}
         alt="Personal hike"
       ></img>
-    </div>
+    </>
   );
 }

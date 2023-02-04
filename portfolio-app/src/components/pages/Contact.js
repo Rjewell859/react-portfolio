@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { checkMessage, validateEmail } from "../../utils/helpers";
 
-function Contact() {
+export default function Contact() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -50,7 +50,6 @@ function Contact() {
       );
       document.getElementById("consent").checked = false;
     }
-
     setName("");
     setMessage("");
     setConsent("");
@@ -58,103 +57,102 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="card bg-light">
-      <h1 className="card-header">Contact Me</h1>
-      <form
-        name="contact-form"
-        className="card-body"
-        action="#"
-        method="post"
-        id="contactform"
-      >
-        <div className="form-group">
-          <label htmlFor="fullname">Name:</label>
-          <input
-            value={name}
-            onChange={handleInputChange}
-            className="form-control"
-            type="text"
-            id="fullname"
-            name="name"
-          ></input>
+    <>
+      <div id="contact" className="info">
+        <div className="card bg-light">
+          <h1 className="card-header">Contact Me</h1>
+          <form
+            name="contact-form"
+            className="card-body"
+            action="#"
+            method="post"
+            id="contact-form"
+          >
+            <div className="form-group">
+              <label htmlFor="fullname">Name:</label>
+              <input
+                value={name}
+                onChange={handleInputChange}
+                className="form-control"
+                type="text"
+                id="fullname"
+                name="name"
+              ></input>
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">Message:</label>
+              <textarea
+                value={message}
+                onChange={handleInputChange}
+                name="message"
+                className="form-control"
+                id="message"
+              ></textarea>
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email:</label>
+              <input
+                value={email}
+                name="email"
+                onChange={handleInputChange}
+                className="form-control"
+                type="email"
+                id="email"
+              ></input>
+            </div>
+            <br></br>
+            <div className="form-group">
+              <input
+                onClick={handleFormSubmit}
+                className="btn btn-primary"
+                type="button"
+                id="submit"
+                value="Click to submit"
+              ></input>
+            </div>
+            <div className="form-group">
+              <label className="form-text form-check-label" htmlFor="check">
+                I agree to receive emails via this email
+              </label>
+              <input
+                style={{ marginLeft: "10px" }}
+                className="form-check-input"
+                onChange={handleInputChange}
+                type="checkbox"
+                value={consent}
+                name="consent"
+                id="consent"
+              ></input>
+            </div>
+            {errorMessage && (
+              <div>
+                <p id="errors" className="alert alert-danger">
+                  {errorMessage}
+                </p>
+              </div>
+            )}
+            {successMessage && (
+              <div>
+                <p id="success" className="alert alert-success">
+                  {successMessage}
+                </p>
+              </div>
+            )}
+          </form>
+          <p className="card-footer">
+            Please leave your name, a message and email. I will do my best to
+            get back to you as soon as possible.
+            <br></br>
+            <a className="myinfo" href="mailto:headwallforest27@gmail.com">
+              headwallforest27@gmail.com
+            </a>
+            <br></br>
+            <a className="myinfo" href="tel:18006035028260">
+              (603)502-8260
+            </a>
+          </p>
         </div>
-
-        <div className="form-group">
-          <label htmlFor="message">Message:</label>
-          <textarea
-            value={message}
-            onChange={handleInputChange}
-            name="message"
-            className="form-control"
-            id="message"
-          ></textarea>
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            value={email}
-            name="email"
-            onChange={handleInputChange}
-            className="form-control"
-            type="email"
-            id="email"
-          ></input>
-        </div>
-        <br></br>
-        <div className="form-group">
-          <input
-            onClick={handleFormSubmit}
-            className="btn btn-primary"
-            type="button"
-            id="submit"
-            value="Click to submit"
-          ></input>
-        </div>
-
-        <div className="form-group">
-          <label className="form-text form-check-label" htmlFor="check">
-            I agree to receive emails via this email
-          </label>
-          <input
-            style={{ marginLeft: "10px" }}
-            className="form-check-input"
-            onChange={handleInputChange}
-            type="checkbox"
-            value={consent}
-            name="consent"
-            id="consent"
-          ></input>
-        </div>
-        {errorMessage && (
-          <div>
-            <p id="errors" className="alert alert-danger">
-              {errorMessage}
-            </p>
-          </div>
-        )}
-        {successMessage && (
-          <div>
-            <p id="success" className="alert alert-success">
-              {successMessage}
-            </p>
-          </div>
-        )}
-      </form>
-      <p className="card-footer">
-        Please leave your name, a message and email. I will do my best to get
-        back to you as soon as possible.
-        <br></br>
-        <a className="myinfo" href="mailto:headwallforest27@gmail.com">
-          headwallforest27@gmail.com
-        </a>
-        <br></br>
-        <a className="myinfo" href="tel:18006035028260">
-          (603)502-8260
-        </a>
-      </p>
-    </div>
+      </div>
+    </>
   );
 }
-
-export default Contact;

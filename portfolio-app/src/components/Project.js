@@ -1,12 +1,13 @@
 import React from "react";
 
-function Project({ img, title, link, repo, alt }) {
+export default function Project({ img, title, link, repo, alt }) {
   return (
-    <div className="project">
+    <div className="project shadow-sm">
       <h4>
         {title}
         <a href={repo} target="_blank" rel="noreferrer">
           <img
+            className="grow"
             id="giticon"
             src={require("../img/design/repoicon.png")}
             alt="git icon"
@@ -14,10 +15,8 @@ function Project({ img, title, link, repo, alt }) {
         </a>
       </h4>
       <a href={link} target="_blank" rel="noreferrer">
-        <img src={img} alt={alt}></img>
+        <img className="grow" src={img} alt={alt}></img>
       </a>
     </div>
   );
 }
-
-export default Project;
