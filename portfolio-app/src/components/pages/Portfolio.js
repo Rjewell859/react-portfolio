@@ -7,9 +7,9 @@ export default function Portfolio() {
       <div className="card bg-light mb-3">
         <h1 className="card-header">Portfolio</h1>
         <p className="card-body">
-          Welcome to my portfolio of completed projects. If you click on a
+          Welcome to my portfolio. Here you will find many of my completed projects, the first three are more complex as they were completed with a group of teammates. If you click on a
           project image it opens a new tab that will take you to the deployed
-          website. Click on the the respective "
+          website if available. Several of these projects are offline applications. Click on the the respective "
           <img
             style={{ height: "25px", width: "25px" }}
             id="giticon"
