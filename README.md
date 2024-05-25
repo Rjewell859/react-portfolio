@@ -19,7 +19,7 @@ but below the form you will find my information, as well my email address is in 
 
 ## Deployed
 
-[My Deployed Portfolio](https://rjewell859.github.io/react-portfolio/)
+[My Deployed Portfolio](https://rjewell859.github.io/react-portfolio/index.html)
 
 ## Screenshot
 
