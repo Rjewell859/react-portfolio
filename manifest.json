@@ -1,0 +1,26 @@
+{
+  "short_name": "Portfolio",
+  "name": "Ryan Jewell Portfolio",
+  "description": "My react application to display my current portfolio of work",
+  "icons": [
+    {
+      "src": "portfolio.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "portfolio-md.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "portfolio.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
